@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C50496F370F4E6BC301C4B036F0C68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0F799142FC0AD33E3BD551A7C8F51128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		10728454AB2313D0EB2D5F8970A1266C /* Pods-LBHTTPMock_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F19FE96F48A3CE10A5338E9530031A /* Pods-LBHTTPMock_Tests-dummy.m */; };
+		10B69D35B81A5C5CD847846980F7C6E3 /* Pods-LBHTTPMock_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF765461064F0AF22686BCB40A556438 /* Pods-LBHTTPMock_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		126EE9EA491218D8E99FF2C44DC506CE /* LBHTTPMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A891E245C572873C42197AAD38D8152 /* LBHTTPMock-dummy.m */; };
+		22638B7CFF689E37A58D219A5B9D73CA /* LBHTTPMock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1DB983C391C38BEDD5FF051F3F01EF /* LBHTTPMock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAB775B7D3C05AEE56B734C911D220D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		884A614FA531CF483DFDC3B3B40D7B9D /* Pods-LBHTTPMock_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BC6AF1C5AA6B1D108AF9BC6F9FAC13 /* Pods-LBHTTPMock_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27CD5EC1BAB0EA4B665FD958A7F3E7E /* Pods-LBHTTPMock_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 762831BD22D02E0EDF9F19B34586ECE1 /* Pods-LBHTTPMock_Example-dummy.m */; };
+		C115A7F72574055500E576ED /* LBHTTPURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C115A7F52574055500E576ED /* LBHTTPURLProtocol.h */; };
+		C115A7F82574055500E576ED /* LBHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C115A7F62574055500E576ED /* LBHTTPURLProtocol.m */; };
+		C115A7FE2574057900E576ED /* LBHTTPMockManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C115A7FC2574057900E576ED /* LBHTTPMockManager.h */; };
+		C115A7FF2574057900E576ED /* LBHTTPMockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C115A7FD2574057900E576ED /* LBHTTPMockManager.m */; };
+		C115A80B257405A300E576ED /* LBHTTPMockMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = C115A809257405A300E576ED /* LBHTTPMockMethodSwizzling.h */; };
+		C115A80C257405A300E576ED /* LBHTTPMockMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C115A80A257405A300E576ED /* LBHTTPMockMethodSwizzling.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B22E5F78F8B4E3591DDF79C3F96833E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2094DE812530B1AA2DD4D2DB9DA5E5F;
+			remoteInfo = LBHTTPMock;
+		};
+		6B6972B80BCCD4F96997D133C4BEAA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0B9DF7BFB8AC73B04CD93E15D1D7E94;
+			remoteInfo = "Pods-LBHTTPMock_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0885763B7736764DB729BA88A52347 /* Pods-LBHTTPMock_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBHTTPMock_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2272B58144E56E930A96E1905A3360C7 /* Pods-LBHTTPMock_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBHTTPMock_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		26012A29782822F647F27DA3EC17D450 /* LBHTTPMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBHTTPMock.release.xcconfig; sourceTree = "<group>"; };
+		2A891E245C572873C42197AAD38D8152 /* LBHTTPMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBHTTPMock-dummy.m"; sourceTree = "<group>"; };
+		39F19FE96F48A3CE10A5338E9530031A /* Pods-LBHTTPMock_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LBHTTPMock_Tests-dummy.m"; sourceTree = "<group>"; };
+		51262B4BBC16ADC6412B72A2938726DA /* LBHTTPMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LBHTTPMock.modulemap; sourceTree = "<group>"; };
+		585632BB6FABFEB3ABE4BFED3BEEAAC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		625F01A54FF56A2C5DD350B3DD0301EE /* Pods-LBHTTPMock_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBHTTPMock_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		64A00F104866F57DAF3B071B5166A820 /* Pods-LBHTTPMock_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBHTTPMock_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		67B416BE738EE0B7C177BE49DCB900AB /* Pods-LBHTTPMock_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LBHTTPMock_Example.modulemap"; sourceTree = "<group>"; };
+		708D9428E0556F43ECBE6FD037617D57 /* Pods-LBHTTPMock_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LBHTTPMock_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		762831BD22D02E0EDF9F19B34586ECE1 /* Pods-LBHTTPMock_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LBHTTPMock_Example-dummy.m"; sourceTree = "<group>"; };
+		7C17253044059754AA55F30538E68D0D /* Pods-LBHTTPMock_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBHTTPMock_Example-Info.plist"; sourceTree = "<group>"; };
+		8930B2E9CA87A9FF002861892C54D73A /* Pods-LBHTTPMock_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LBHTTPMock_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A1DB983C391C38BEDD5FF051F3F01EF /* LBHTTPMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBHTTPMock-umbrella.h"; sourceTree = "<group>"; };
+		8AC8ACA954D9C14499CCB2355E727AC4 /* Pods-LBHTTPMock_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBHTTPMock_Tests-Info.plist"; sourceTree = "<group>"; };
+		9CD4AB035342B092C12F624037BADFD9 /* Pods-LBHTTPMock_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBHTTPMock_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0CBFED47ECC5D71F90EA6BE89770AE9 /* LBHTTPMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBHTTPMock.debug.xcconfig; sourceTree = "<group>"; };
+		B057311935A87252D62D0323D0669442 /* LBHTTPMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBHTTPMock-prefix.pch"; sourceTree = "<group>"; };
+		B7BC6AF1C5AA6B1D108AF9BC6F9FAC13 /* Pods-LBHTTPMock_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LBHTTPMock_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C115A7F52574055500E576ED /* LBHTTPURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LBHTTPURLProtocol.h; path = LBHTTPMock/Classes/LBHTTPURLProtocol.h; sourceTree = "<group>"; };
+		C115A7F62574055500E576ED /* LBHTTPURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LBHTTPURLProtocol.m; path = LBHTTPMock/Classes/LBHTTPURLProtocol.m; sourceTree = "<group>"; };
+		C115A7FC2574057900E576ED /* LBHTTPMockManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LBHTTPMockManager.h; path = LBHTTPMock/Classes/LBHTTPMockManager.h; sourceTree = "<group>"; };
+		C115A7FD2574057900E576ED /* LBHTTPMockManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LBHTTPMockManager.m; path = LBHTTPMock/Classes/LBHTTPMockManager.m; sourceTree = "<group>"; };
+		C115A809257405A300E576ED /* LBHTTPMockMethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LBHTTPMockMethodSwizzling.h; path = LBHTTPMock/Classes/LBHTTPMockMethodSwizzling.h; sourceTree = "<group>"; };
+		C115A80A257405A300E576ED /* LBHTTPMockMethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LBHTTPMockMethodSwizzling.m; path = LBHTTPMock/Classes/LBHTTPMockMethodSwizzling.m; sourceTree = "<group>"; };
+		CF765461064F0AF22686BCB40A556438 /* Pods-LBHTTPMock_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LBHTTPMock_Example-umbrella.h"; sourceTree = "<group>"; };
+		D2A312325BC50D724DF2D75197E72D0C /* LBHTTPMock-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LBHTTPMock-Info.plist"; sourceTree = "<group>"; };
+		D83759F30729AE60849C5E610FBE0A41 /* Pods_LBHTTPMock_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBHTTPMock_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA942C3FB8A9109D5254DDA7A65BA3E2 /* Pods-LBHTTPMock_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBHTTPMock_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DB7DC15F6334934DF46C4438273069E0 /* Pods-LBHTTPMock_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBHTTPMock_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBF2A02AF84385900E17872D3CADB099 /* LBHTTPMock.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LBHTTPMock.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E95570DCE8920927AEF15D6C7480B26F /* Pods_LBHTTPMock_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBHTTPMock_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F032D53DA62EB01496C371C0E58B75BA /* LBHTTPMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LBHTTPMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F969EFB0A945BC9171F225384BF2DD2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FA4ADEA9D8473DC20819FBDD38AE1B02 /* Pods-LBHTTPMock_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LBHTTPMock_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B547275AE84FF72645160AB2A1B5C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C50496F370F4E6BC301C4B036F0C68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A97E877C9B4BBC6B5AB11D3EB43C5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAB775B7D3C05AEE56B734C911D220D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A519D3D0FB930C1F7BF229FAC574C11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F799142FC0AD33E3BD551A7C8F51128 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FDB31AE0B5B3838D1EC8132EE7BD43 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A53B4EE84BB84C4B677E30E0705BC3A /* LBHTTPMock */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		19F621EDFE465E7139A495FCB5F74AA9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63CC43788E3C83FD9D3D3C5AE5CF39B6 /* Pods-LBHTTPMock_Example */,
+				61DE2A75F39ACB201613C53411956117 /* Pods-LBHTTPMock_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1A0D44A34E3D6BEB29EDA0C15E2B42EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F032D53DA62EB01496C371C0E58B75BA /* LBHTTPMock.framework */,
+				E95570DCE8920927AEF15D6C7480B26F /* Pods_LBHTTPMock_Example.framework */,
+				D83759F30729AE60849C5E610FBE0A41 /* Pods_LBHTTPMock_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61DE2A75F39ACB201613C53411956117 /* Pods-LBHTTPMock_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA4ADEA9D8473DC20819FBDD38AE1B02 /* Pods-LBHTTPMock_Tests.modulemap */,
+				8930B2E9CA87A9FF002861892C54D73A /* Pods-LBHTTPMock_Tests-acknowledgements.markdown */,
+				2272B58144E56E930A96E1905A3360C7 /* Pods-LBHTTPMock_Tests-acknowledgements.plist */,
+				39F19FE96F48A3CE10A5338E9530031A /* Pods-LBHTTPMock_Tests-dummy.m */,
+				8AC8ACA954D9C14499CCB2355E727AC4 /* Pods-LBHTTPMock_Tests-Info.plist */,
+				B7BC6AF1C5AA6B1D108AF9BC6F9FAC13 /* Pods-LBHTTPMock_Tests-umbrella.h */,
+				64A00F104866F57DAF3B071B5166A820 /* Pods-LBHTTPMock_Tests.debug.xcconfig */,
+				DA942C3FB8A9109D5254DDA7A65BA3E2 /* Pods-LBHTTPMock_Tests.release.xcconfig */,
+			);
+			name = "Pods-LBHTTPMock_Tests";
+			path = "Target Support Files/Pods-LBHTTPMock_Tests";
+			sourceTree = "<group>";
+		};
+		636AB33C57DE067761A28B88662D3BAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51262B4BBC16ADC6412B72A2938726DA /* LBHTTPMock.modulemap */,
+				2A891E245C572873C42197AAD38D8152 /* LBHTTPMock-dummy.m */,
+				D2A312325BC50D724DF2D75197E72D0C /* LBHTTPMock-Info.plist */,
+				B057311935A87252D62D0323D0669442 /* LBHTTPMock-prefix.pch */,
+				8A1DB983C391C38BEDD5FF051F3F01EF /* LBHTTPMock-umbrella.h */,
+				A0CBFED47ECC5D71F90EA6BE89770AE9 /* LBHTTPMock.debug.xcconfig */,
+				26012A29782822F647F27DA3EC17D450 /* LBHTTPMock.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LBHTTPMock";
+			sourceTree = "<group>";
+		};
+		63CC43788E3C83FD9D3D3C5AE5CF39B6 /* Pods-LBHTTPMock_Example */ = {
+			isa = PBXGroup;
+			children = (
+				67B416BE738EE0B7C177BE49DCB900AB /* Pods-LBHTTPMock_Example.modulemap */,
+				708D9428E0556F43ECBE6FD037617D57 /* Pods-LBHTTPMock_Example-acknowledgements.markdown */,
+				DB7DC15F6334934DF46C4438273069E0 /* Pods-LBHTTPMock_Example-acknowledgements.plist */,
+				762831BD22D02E0EDF9F19B34586ECE1 /* Pods-LBHTTPMock_Example-dummy.m */,
+				9CD4AB035342B092C12F624037BADFD9 /* Pods-LBHTTPMock_Example-frameworks.sh */,
+				7C17253044059754AA55F30538E68D0D /* Pods-LBHTTPMock_Example-Info.plist */,
+				CF765461064F0AF22686BCB40A556438 /* Pods-LBHTTPMock_Example-umbrella.h */,
+				625F01A54FF56A2C5DD350B3DD0301EE /* Pods-LBHTTPMock_Example.debug.xcconfig */,
+				1A0885763B7736764DB729BA88A52347 /* Pods-LBHTTPMock_Example.release.xcconfig */,
+			);
+			name = "Pods-LBHTTPMock_Example";
+			path = "Target Support Files/Pods-LBHTTPMock_Example";
+			sourceTree = "<group>";
+		};
+		8A53B4EE84BB84C4B677E30E0705BC3A /* LBHTTPMock */ = {
+			isa = PBXGroup;
+			children = (
+				C115A7F52574055500E576ED /* LBHTTPURLProtocol.h */,
+				C115A7F62574055500E576ED /* LBHTTPURLProtocol.m */,
+				C115A7FC2574057900E576ED /* LBHTTPMockManager.h */,
+				C115A7FD2574057900E576ED /* LBHTTPMockManager.m */,
+				C115A809257405A300E576ED /* LBHTTPMockMethodSwizzling.h */,
+				C115A80A257405A300E576ED /* LBHTTPMockMethodSwizzling.m */,
+				F7BB0D3A6474C418D0D133B684F38724 /* Pod */,
+				636AB33C57DE067761A28B88662D3BAB /* Support Files */,
+			);
+			name = LBHTTPMock;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				18FDB31AE0B5B3838D1EC8132EE7BD43 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1A0D44A34E3D6BEB29EDA0C15E2B42EC /* Products */,
+				19F621EDFE465E7139A495FCB5F74AA9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7BB0D3A6474C418D0D133B684F38724 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2A02AF84385900E17872D3CADB099 /* LBHTTPMock.podspec */,
+				F969EFB0A945BC9171F225384BF2DD2A /* LICENSE */,
+				585632BB6FABFEB3ABE4BFED3BEEAAC2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		59796A3903144AB1EC8C72464B055C5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A7FE2574057900E576ED /* LBHTTPMockManager.h in Headers */,
+				C115A7F72574055500E576ED /* LBHTTPURLProtocol.h in Headers */,
+				22638B7CFF689E37A58D219A5B9D73CA /* LBHTTPMock-umbrella.h in Headers */,
+				C115A80B257405A300E576ED /* LBHTTPMockMethodSwizzling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB85FF79B6665802E4E6B025F5DB373 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884A614FA531CF483DFDC3B3B40D7B9D /* Pods-LBHTTPMock_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB746ADD6C1B86B33376320854DF5196 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B69D35B81A5C5CD847846980F7C6E3 /* Pods-LBHTTPMock_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A2094DE812530B1AA2DD4D2DB9DA5E5F /* LBHTTPMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D8EC167C693D557C3744C801AF4508 /* Build configuration list for PBXNativeTarget "LBHTTPMock" */;
+			buildPhases = (
+				59796A3903144AB1EC8C72464B055C5E /* Headers */,
+				4D0AA84985FDD4CCB504025E0F7A9A16 /* Sources */,
+				A519D3D0FB930C1F7BF229FAC574C11A /* Frameworks */,
+				418972A6D3F87EB79DA8C20BD0877F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBHTTPMock;
+			productName = LBHTTPMock;
+			productReference = F032D53DA62EB01496C371C0E58B75BA /* LBHTTPMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0B9DF7BFB8AC73B04CD93E15D1D7E94 /* Pods-LBHTTPMock_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F9E95F90B7736CE8151727A38A4F19 /* Build configuration list for PBXNativeTarget "Pods-LBHTTPMock_Example" */;
+			buildPhases = (
+				FB746ADD6C1B86B33376320854DF5196 /* Headers */,
+				017C786D797B42E4D6CB7EDBEF0D4347 /* Sources */,
+				4B547275AE84FF72645160AB2A1B5C7A /* Frameworks */,
+				1B2467798764885680F99ABFEAB68EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CF58BEA41CCB40639A465F4E6007C53 /* PBXTargetDependency */,
+			);
+			name = "Pods-LBHTTPMock_Example";
+			productName = "Pods-LBHTTPMock_Example";
+			productReference = E95570DCE8920927AEF15D6C7480B26F /* Pods_LBHTTPMock_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B26C6A50E2DAAA71EFEAC16307C98F0A /* Pods-LBHTTPMock_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0462A782958FD9443AC54E8986668C9 /* Build configuration list for PBXNativeTarget "Pods-LBHTTPMock_Tests" */;
+			buildPhases = (
+				ABB85FF79B6665802E4E6B025F5DB373 /* Headers */,
+				26FB50F131CE564E54E23CD1FC704B8A /* Sources */,
+				7A97E877C9B4BBC6B5AB11D3EB43C5E8 /* Frameworks */,
+				C1CDD3311D13187ABA3F2068BDD55317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC69EC1655F67D92C08F682ABC1DB2F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-LBHTTPMock_Tests";
+			productName = "Pods-LBHTTPMock_Tests";
+			productReference = D83759F30729AE60849C5E610FBE0A41 /* Pods_LBHTTPMock_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A0D44A34E3D6BEB29EDA0C15E2B42EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2094DE812530B1AA2DD4D2DB9DA5E5F /* LBHTTPMock */,
+				B0B9DF7BFB8AC73B04CD93E15D1D7E94 /* Pods-LBHTTPMock_Example */,
+				B26C6A50E2DAAA71EFEAC16307C98F0A /* Pods-LBHTTPMock_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B2467798764885680F99ABFEAB68EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418972A6D3F87EB79DA8C20BD0877F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1CDD3311D13187ABA3F2068BDD55317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017C786D797B42E4D6CB7EDBEF0D4347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27CD5EC1BAB0EA4B665FD958A7F3E7E /* Pods-LBHTTPMock_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FB50F131CE564E54E23CD1FC704B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10728454AB2313D0EB2D5F8970A1266C /* Pods-LBHTTPMock_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0AA84985FDD4CCB504025E0F7A9A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A80C257405A300E576ED /* LBHTTPMockMethodSwizzling.m in Sources */,
+				C115A7FF2574057900E576ED /* LBHTTPMockManager.m in Sources */,
+				126EE9EA491218D8E99FF2C44DC506CE /* LBHTTPMock-dummy.m in Sources */,
+				C115A7F82574055500E576ED /* LBHTTPURLProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CF58BEA41CCB40639A465F4E6007C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBHTTPMock;
+			target = A2094DE812530B1AA2DD4D2DB9DA5E5F /* LBHTTPMock */;
+			targetProxy = 0B22E5F78F8B4E3591DDF79C3F96833E /* PBXContainerItemProxy */;
+		};
+		CC69EC1655F67D92C08F682ABC1DB2F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LBHTTPMock_Example";
+			target = B0B9DF7BFB8AC73B04CD93E15D1D7E94 /* Pods-LBHTTPMock_Example */;
+			targetProxy = 6B6972B80BCCD4F96997D133C4BEAA24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FA99F1A66FAA44BBFD3715EC34AB92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0885763B7736764DB729BA88A52347 /* Pods-LBHTTPMock_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LBHTTPMock_Example/Pods-LBHTTPMock_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LBHTTPMock_Example/Pods-LBHTTPMock_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E1D37F761D16733611CF0384BC13C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26012A29782822F647F27DA3EC17D450 /* LBHTTPMock.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBHTTPMock/LBHTTPMock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBHTTPMock/LBHTTPMock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LBHTTPMock/LBHTTPMock.modulemap";
+				PRODUCT_MODULE_NAME = LBHTTPMock;
+				PRODUCT_NAME = LBHTTPMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		684AAE687145CFA86368E70B746126EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CBFED47ECC5D71F90EA6BE89770AE9 /* LBHTTPMock.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBHTTPMock/LBHTTPMock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBHTTPMock/LBHTTPMock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LBHTTPMock/LBHTTPMock.modulemap";
+				PRODUCT_MODULE_NAME = LBHTTPMock;
+				PRODUCT_NAME = LBHTTPMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		70131B58F6068267412C2BB8618B4B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A00F104866F57DAF3B071B5166A820 /* Pods-LBHTTPMock_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LBHTTPMock_Tests/Pods-LBHTTPMock_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LBHTTPMock_Tests/Pods-LBHTTPMock_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7AFABE38BF732C8AC263C11F0819CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625F01A54FF56A2C5DD350B3DD0301EE /* Pods-LBHTTPMock_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LBHTTPMock_Example/Pods-LBHTTPMock_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LBHTTPMock_Example/Pods-LBHTTPMock_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2BC713973779C234BBC4A79131A735A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA942C3FB8A9109D5254DDA7A65BA3E2 /* Pods-LBHTTPMock_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LBHTTPMock_Tests/Pods-LBHTTPMock_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LBHTTPMock_Tests/Pods-LBHTTPMock_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0462A782958FD9443AC54E8986668C9 /* Build configuration list for PBXNativeTarget "Pods-LBHTTPMock_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70131B58F6068267412C2BB8618B4B7E /* Debug */,
+				D2BC713973779C234BBC4A79131A735A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F9E95F90B7736CE8151727A38A4F19 /* Build configuration list for PBXNativeTarget "Pods-LBHTTPMock_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7AFABE38BF732C8AC263C11F0819CDF /* Debug */,
+				2FA99F1A66FAA44BBFD3715EC34AB92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D8EC167C693D557C3744C801AF4508 /* Build configuration list for PBXNativeTarget "LBHTTPMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684AAE687145CFA86368E70B746126EC /* Debug */,
+				3E1D37F761D16733611CF0384BC13C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

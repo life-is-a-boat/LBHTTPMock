@@ -63,9 +63,9 @@
 		63A0D06F2C36F80775C02839 /* Pods-LBHTTPMock_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBHTTPMock_Example.debug.xcconfig"; path = "Target Support Files/Pods-LBHTTPMock_Example/Pods-LBHTTPMock_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F00A2A9F2097FB03429D924 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9244D069B94E963C9FCB2D37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E464C0870493AD4B48E7D7D0 /* LBHTTPMock.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LBHTTPMock.podspec; path = ../LBHTTPMock.podspec; sourceTree = "<group>"; };
+		8F00A2A9F2097FB03429D924 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9244D069B94E963C9FCB2D37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E464C0870493AD4B48E7D7D0 /* LBHTTPMock.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBHTTPMock.podspec; path = ../LBHTTPMock.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E662F79E3C0A22DBAE2B1BD8 /* Pods-LBHTTPMock_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBHTTPMock_Tests.release.xcconfig"; path = "Target Support Files/Pods-LBHTTPMock_Tests/Pods-LBHTTPMock_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				3ED08B5EE8769C369B59B9D9 /* Pods-LBHTTPMock_Tests.debug.xcconfig */,
 				E662F79E3C0A22DBAE2B1BD8 /* Pods-LBHTTPMock_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,0 +1,6 @@
+framework module LBHTTPMock {
+  umbrella header "LBHTTPMock-umbrella.h"
+
+  export *
+  module * { export * }
+}
