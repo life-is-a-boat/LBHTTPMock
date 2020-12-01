@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'life-is-a-boat' => '15560028009@163.com' }
-  s.source           = { :git => 'https://github.com/life-is-a-boat/LBHTTPMock.git', :branch => "/release/#{s.version}" }
+  s.source           = { :git => 'https://github.com/life-is-a-boat/LBHTTPMock.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
