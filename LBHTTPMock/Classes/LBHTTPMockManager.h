@@ -11,9 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LBHTTPMockManager : NSObject
 
+@property (nonatomic, assign, readonly) BOOL isEnable; //是否需要拦截
 @property (nonatomic, copy, readwrite) NSString *hookURL; //需要拦截的的URL
 @property (nonatomic, copy, readwrite) NSString *redirectURL; //重定向的URL
-@property (nonatomic, strong, readwrite) NSMutableArray *ignoreURLs; //不需要重定向的URLs
+@property (nonatomic, strong, readwrite) NSArray *ignoreURLs; //不需要重定向的URLs
 
 
 //开关

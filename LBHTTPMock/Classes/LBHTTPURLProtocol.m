@@ -43,23 +43,25 @@
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
     printf("_________URL:%s\n",request.URL.absoluteString.UTF8String);
-    //已经拦截过的就不再k拦截，避免死循环
-    if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
-       return false;
-    }
-    //不需要hook的URL
-    for (NSString *url in [LBHTTPMockManager share].ignoreURLs) {
-        if ([request.URL.absoluteString containsString:url]) {
+    if ([LBHTTPMockManager share].isEnable) {
+        //已经拦截过的就不再k拦截，避免死循环
+        if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
+           return false;
+        }
+        //不需要hook的URL
+        for (NSString *url in [LBHTTPMockManager share].ignoreURLs) {
+            if ([request.URL.absoluteString containsString:url]) {
+                return false;
+            }
+        }
+        //需要hook的URL
+        if ([request.URL.absoluteString containsString:[LBHTTPMockManager share].hookURL]) {
+            return true;
+        }
+        
+        if ([request.URL.absoluteString containsString:[LBHTTPMockManager share].redirectURL]) {
             return false;
         }
-    }
-    //需要hook的URL
-    if ([request.URL.absoluteString containsString:[LBHTTPMockManager share].hookURL]) {
-        return true;
-    }
-    
-    if ([request.URL.absoluteString containsString:[LBHTTPMockManager share].redirectURL]) {
-        return false;
     }
     
     return false;

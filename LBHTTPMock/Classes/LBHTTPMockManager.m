@@ -13,6 +13,7 @@
 
 @end
 @implementation LBHTTPMockManager
+
 static LBHTTPMockManager *shareInstance = nil;
 //单例
 + (instancetype)share {

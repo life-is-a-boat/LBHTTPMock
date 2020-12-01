@@ -36,6 +36,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LBHTTPMock/Classes/**/*'
 
-   s.public_header_files = 'LBHTTPMock/Classes/LBHTTPMockManager.h'
+  s.public_header_files = 'LBHTTPMock/Classes/LBHTTPMockManager.h'
    
 end
